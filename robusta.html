@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kopi Robusta - Roof Top Cafe</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-theme="light">
+
+<!-- SIDEBAR -->
+<aside id="sidebar" class="sidebar" aria-hidden="true">
+  <div class="sidebar-header">
+    <h3>☕ Menu Navigasi</h3>
+    <button id="sidebar-close" aria-label="Tutup sidebar">✕</button>
+  </div>
+  <nav class="sidebar-nav">
+    <ul>
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="arabika.html">☕ Kopi Arabika</a></li>
+      <li><a href="robusta.html" class="active">☕ Kopi Robusta</a></li>
+      <li><a href="galeri.html">📸 Galeri</a></li>
+      <li><a href="berita.html">📰 Berita</a></li>
+      <li><a href="faq.html">❓ FAQ</a></li>
+      <li><a href="kontak.html">📞 Kontak</a></li>
+      <li><a href="promo.html">Promo</a></li>
+    </ul>
+  </nav>
+  <div class="sidebar-footer">
+    <p>📍 Jakarta Pusat</p>
+    <p>📞 +62 21 1234 5678</p>
+    <p>⏰ 08:00 - 22:00 WIB</p>
+  </div>
+</aside>
+
+<div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+<!-- HEADER & NAVBAR -->
+<header id="site-header">
+  <nav id="main-nav" aria-label="Primary Navigation">
+    <div class="nav-left">
+      <button id="logo-btn" class="brand" aria-label="Buka menu sidebar">
+        <span class="brand-line1">Roof Top Cafe</span>
+        <span class="brand-line2">Premium Coffee</span>
+      </button>
+    </div>
+
+    <div class="nav-center">
+      <ul class="nav-list" role="menubar">
+        <li role="none"><a role="menuitem" href="index.html">Home</a></li>
+        <li role="none" class="has-dropdown">
+          <button aria-haspopup="true" aria-expanded="false">Produk ▾</button>
+          <ul class="dropdown" role="menu" hidden>
+            <li role="none"><a role="menuitem" href="arabika.html">☕ Kopi Arabika</a></li>
+            <li role="none"><a role="menuitem" href="robusta.html">☕ Kopi Robusta</a></li>
+          </ul>
+        </li>
+        <li role="none"><a role="menuitem" href="galeri.html">Galeri</a></li>
+        <li role="none"><a role="menuitem" href="berita.html">Berita</a></li>
+        <li role="none"><a role="menuitem" href="faq.html">FAQ</a></li>
+        <li role="none"><a role="menuitem" href="kontak.html">Kontak</a></li>
+        <li role="none"><a role="menuitem" href="promo.html">Promo</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-right">
+      <div id="nav-search" role="search">
+        <input id="search-input" type="search" placeholder="Cari..." aria-label="Pencarian"/>
+        <button id="search-btn" aria-label="Tombol cari">🔍</button>
+      </div>
+      <button id="cart-btn" class="cart-button" aria-label="Keranjang belanja">
+        🛒 <span id="cart-count" class="cart-badge">0</span>
+      </button>
+      <button id="theme-toggle" aria-pressed="false" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </nav>
+</header>
+
+<!-- MAIN CONTENT -->
+<main>
+  <section class="page-header">
+    <h1>Kopi Robusta</h1>
+    <p>Robusta pilihan untuk espresso: body kuat, crema tebal, aftertaste cokelat pekat.</p>
+  </section>
+
+  <section class="product-list">
+    <article class="product-card">
+      <div class="product-image-placeholder">
+        <img src="/gambar/lampung.jpg">
+      </div>
+      <h4>Robusta Lampung</h4>
+      <p class="product-desc">Body kuat, cocok untuk espresso. Crema tebal dengan rasa cokelat pekat.</p>
+      <p class="product-price">Rp 65.000 <span class="price-unit">/ 200g</span></p>
+      <button class="btn-add-cart" data-name="Robusta Lampung" data-price="65000">🛒 Tambah ke Keranjang</button>
+    </article>
+
+    <article class="product-card">
+      <div class="product-badge">NEW</div>
+      <div class="product-image-placeholder">
+        <img src="/gambar/bali.jpg">
+      </div>
+      <h4>Robusta Bali Kintamani</h4>
+      <p class="product-desc">Mild robusta dengan hint citrus. Unik dan menyegarkan.</p>
+      <p class="product-price">Rp 70.000 <span class="price-unit">/ 200g</span></p>
+      <button class="btn-add-cart" data-name="Robusta Bali Kintamani" data-price="70000">🛒 Tambah ke Keranjang</button>
+    </article>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer id="site-footer">
+  <div class="footer-inner">
+    <div class="footer-columns">
+      <div class="footer-col">
+        <h4>Tentang Roof Top Cafe</h4>
+        <p>Kopi premium dengan suasana rooftop yang nyaman. Dukung petani lokal dan nikmati cita rasa terbaik Nusantara.</p>
+        <div class="footer-social">
+          <a href="#">📷 Instagram</a>
+          <a href="#">👥 Facebook</a>
+          <a href="#">💬 WhatsApp</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigasi Cepat</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="arabika.html">Kopi Arabika</a></li>
+          <li><a href="robusta.html">Kopi Robusta</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+          <li><a href="promo.html">Promo</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kontak Kami</h4>
+        <address>
+          <p>📍 Jl. H. Muzahidin Kiyan Jepara<br>Kalinyamatan Jepara</p>
+          <p>📞 <a href="tel:+6282136728458">+6282136728458</a></p>
+          <p>📧 <a href="mailto:info@rooftopcafe.com">info@rooftopcafe.com</a></p>
+          <p>⏰ Senin - Minggu: 08:00 - 22:00 WIB</p>
+        </address>
+      </div>
+
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p>Subscribe untuk promo dan update terbaru</p>
+        <form class="footer-newsletter">
+          <input type="email" placeholder="Email Anda" required>
+          <button type="submit">→</button>
+        </form>
+      </div>
+    </div>
+
+        <div class="footer-bottom">
+  <p>&copy; <span id="year"></span> Roof Top Cafe. Semua hak cipta dilindungi.</p>
+  <p class="footer-credits">
+    Dibuat oleh Muhammad Salman Al Farizi, NIM : A12.2024.07206 – Lokasi di Jepara
+  </p>
+  <p class="footer-clock">
+    <span id="clock"></span>
+  </p>
+</div>
+
+<button id="back-to-top" aria-label="Kembali ke atas" style="display:none;">⬆️</button>
+<a href="https://wa.me/628123456789" class="whatsapp-float" target="_blank" aria-label="Chat WhatsApp">
+  <span class="wa-icon">💬</span>
+</a>
+<div id="cart-notification" class="cart-notification">
+  <div class="cart-notification-content">
+    <span>✅</span>
+    <div>
+      <strong>Berhasil ditambahkan!</strong>
+      <p id="cart-notification-text">Produk telah ditambahkan ke keranjang</p>
+    </div>
+  </div>
+</div>
+<script type="text/JavaScript"src="js/atur1.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

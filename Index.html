@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Roof Top Cafe - Kopi premium dengan pemandangan kota terbaik. Nikmati Arabika & Robusta pilihan, suasana rooftop nyaman, dan layanan delivery cepat ke seluruh Indonesia.">
+  <meta name="keywords" content="kopi, cafe, rooftop, arabika, robusta, kopi premium, delivery kopi, cafe jakarta">
+  <meta name="author" content="Roof Top Cafe">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Roof Top Cafe - Kopi Premium dengan Pemandangan Kota">
+  <meta property="og:description" content="Nikmati kopi premium di rooftop dengan view kota terbaik">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rooftopcafe.com">
+  
+  <title>Roof Top Cafe - Kopi Premium dengan Pemandangan Kota</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+<body data-theme="light">
+
+<!-- SIDEBAR (Hidden by default, muncul saat klik logo) -->
+<aside id="sidebar" class="sidebar" aria-hidden="true">
+  <div class="sidebar-header">
+    <h3>☕ Menu Navigasi</h3>
+    <button id="sidebar-close" aria-label="Tutup sidebar">✕</button>
+  </div>
+  <nav class="sidebar-nav">
+    <ul>
+      <li><a href="index.html" class="active">🏠 Home</a></li>
+      <li><a href="arabika.html">☕ Kopi Arabika</a></li>
+      <li><a href="robusta.html">☕ Kopi Robusta</a></li>
+      <li><a href="galeri.html">📸 Galeri</a></li>
+      <li><a href="berita.html">📰 Berita</a></li>
+      <li><a href="faq.html">❓ FAQ</a></li>
+      <li><a href="kontak.html">📞 Kontak</a></li>
+      <li><a href="promo.html"> Promo</a></li>
+    </ul>
+  </nav>
+  <div class="sidebar-footer">
+    <p>📍 Jepara</p>
+    <p>📞 +6282136728485</p>
+    <p>⏰ 08:00 - 22:00 WIB</p>
+  </div>
+</aside>
+
+<!-- OVERLAY untuk sidebar -->
+<div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+<!-- HEADER & NAVBAR -->
+<header id="site-header">
+  <nav id="main-nav" aria-label="Primary Navigation">
+    <div class="nav-left">
+      <button id="logo-btn" class="brand" aria-label="Buka menu sidebar">
+        <span class="brand-line1">Roof Top Cafe</span>
+        <span class="brand-line2">Premium Coffee</span>
+      </button>
+    </div>
+
+    <div class="nav-center">
+      <ul class="nav-list" role="menubar">
+        <li role="none"><a role="menuitem" href="index.html" class="active">Home</a></li>
+
+        <li role="none" class="has-dropdown">
+          <button aria-haspopup="true" aria-expanded="false">Produk Kami ▾</button>
+          <ul class="dropdown" role="menu" hidden>
+            <li role="none"><a role="menuitem" href="arabika.html">☕ Kopi Arabika</a></li>
+            <li role="none"><a role="menuitem" href="robusta.html">☕ Kopi Robusta</a></li>
+          </ul>
+        </li>
+
+        <li role="none"><a role="menuitem" href="galeri.html">Galeri</a></li>
+        <li role="none"><a role="menuitem" href="berita.html">Berita</a></li>
+        <li role="none"><a role="menuitem" href="faq.html">FAQ</a></li>
+        <li role="none"><a role="menuitem" href="kontak.html">Kontak</a></li>
+        <li role="none"><a role="menuitem" href="promo.html">Promo</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-right">
+      <div id="nav-search" role="search">
+        <input id="search-input" type="search" placeholder="Cari produk..." aria-label="Pencarian"/>
+        <button id="search-btn" aria-label="Tombol cari">🔍</button>
+      </div>
+      <button id="cart-btn" class="cart-button" aria-label="Keranjang belanja">
+        🛒 <span id="cart-count" class="cart-badge">0</span>
+      </button>
+      <button id="theme-toggle" aria-pressed="false" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </nav>
+</header>
+
+<!-- MAIN CONTENT -->
+<main>
+  
+  <!-- HERO / JUMBOTRON -->
+<section class="jumbotron" id="home-hero">
+  <div class="jumbotron-overlay"></div>
+  <div class="jumbotron-content">
+    <h1>Selamat Datang di Roof Top Cafe</h1>
+    <p>Nikmati kopi premium dengan pemandangan kota terbaik. 
+       Biji kopi pilihan dari seluruh Nusantara, suasana rooftop yang nyaman, 
+       dan layanan pesan-antar cepat.</p>
+    <div class="cta-buttons">
+      <a href="arabika.html" class="btn-primary">☕ Pesan Sekarang</a>
+      <a href="berita.html" class="btn-secondary">📰 Info & Promo</a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- FEATURES / KEUNGGULAN -->
+  <section id="home-features" class="section">
+    <h2>Mengapa Memilih Roof Top Cafe?</h2>
+    <p class="section-subtitle">Pengalaman ngopi terbaik dengan kualitas premium</p>
+    <div class="features-grid">
+      <article class="feature-item">
+        <div class="feature-icon">☕</div>
+        <h3>Biji Kopi Pilihan</h3>
+        <p>Single origin dari petani lokal terpilih. Setiap biji dipilih dengan standar kualitas tertinggi.</p>
+      </article>
+      <article class="feature-item">
+        <div class="feature-icon">🏔️</div>
+        <h3>Suasana Rooftop</h3>
+        <p>Pemandangan kota yang menakjubkan dari lantai 15. Tempat sempurna untuk bersantai.</p>
+      </article>
+      <article class="feature-item">
+        <div class="feature-icon">🚚</div>
+        <h3>Delivery Cepat</h3>
+        <p>Layanan pengiriman ke seluruh Indonesia. Gratis ongkir untuk pembelian di atas Rp 100.000.</p>
+      </article>
+      <article class="feature-item">
+        <div class="feature-icon">👨‍🍳</div>
+        <h3>Barista Terlatih</h3>
+        <p>Tim barista profesional dengan sertifikasi internasional. Setiap cangkir dibuat dengan passion.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- PRODUK UNGGULAN -->
+  <section id="featured-products" class="section">
+    <h2>Produk Unggulan</h2>
+    <p class="section-subtitle">Pilihan terbaik dari koleksi kami</p>
+    <div class="product-showcase">
+      <article class="product-card" data-product="arabika-gayo">
+        <div class="product-badge">BEST SELLER</div>
+        <div class="product-image-placeholder">
+          <img src="/gambar/aceh.jpg">
+        </div>
+        <h4>Arabika Aceh Gayo</h4>
+        <p class="product-desc">Dark chocolate, herbal, earthy. Body tebal dengan aftertaste panjang.</p>
+        <p class="product-price">Rp 85.000 <span class="price-unit">/ 200g</span></p>
+        <button class="btn-add-cart" data-name="Arabika Aceh Gayo" data-price="85000">🛒 Tambah ke Keranjang</button>
+      </article>
+
+      <article class="product-card" data-product="arabika-toraja">
+        <div class="product-badge">PREMIUM</div>
+        <div class="product-image-placeholder">
+          <img src="/gambar/toraja.jpg">
+        </div>
+        <h4>Arabika Toraja</h4>
+        <p class="product-desc">Caramel, nutty, smooth body. Kopi klasik dengan karakter kuat.</p>
+        <p class="product-price">Rp 95.000 <span class="price-unit">/ 200g</span></p>
+        <button class="btn-add-cart" data-name="Arabika Toraja" data-price="95000">🛒 Tambah ke Keranjang</button>
+      </article>
+
+      <article class="product-card" data-product="robusta-lampung">
+        <div class="product-image-placeholder">
+          <img src="/gambar/lampung.jpg">
+        </div>
+        <h4>Robusta Lampung</h4>
+        <p class="product-desc">Body kuat, cocok untuk espresso. Crema tebal dengan rasa cokelat pekat.</p>
+        <p class="product-price">Rp 65.000 <span class="price-unit">/ 200g</span></p>
+        <button class="btn-add-cart" data-name="Robusta Lampung" data-price="65000">🛒 Tambah ke Keranjang</button>
+      </article>
+
+      <article class="product-card" data-product="java-preanger">
+        <div class="product-badge">NEW</div>
+        <div class="product-image-placeholder">
+          <img src="/gambar/java.jpg">
+        </div>
+        <h4>Arabika Java Preanger</h4>
+        <p class="product-desc">Fruity, floral, bright acidity. Cocok untuk pour over dan cold brew.</p>
+        <p class="product-price">Rp 90.000 <span class="price-unit">/ 200g</span></p>
+        <button class="btn-add-cart" data-name="Arabika Java Preanger" data-price="90000">🛒 Tambah ke Keranjang</button>
+      </article>
+    </div>
+    <div class="section-cta">
+      <a href="arabika.html" class="btn-secondary">Lihat Semua Produk →</a>
+    </div>
+  </section>
+
+  <!-- PROMO BANNER -->
+  <section id="promo-banner" class="promo-strip">
+    <div class="promo-content">
+      <span class="promo-icon">🎉</span>
+      <p><strong>PROMO SPESIAL!</strong> Diskon 20% untuk pembelian Arabika Sumatera. Berlaku hingga akhir bulan!</p>
+      <a href="berita.html" class="btn-promo">Lihat Detail</a>
+    </div>
+  </section>
+
+  <!-- TENTANG SINGKAT -->
+<section id="about-preview" class="section section-about-preview">
+  <div class="about-content-wrapper">
+    <div class="about-text">
+      <h2>Tentang Roof Top Cafe</h2>
+      <p class="lead">Didirikan tahun 2018, Roof Top Cafe hadir sebagai destinasi kopi premium dengan konsep unik rooftop cafe di jantung kota Jakarta.</p>
+      <p>Kami berkomitmen untuk menyajikan kopi berkualitas tinggi dari berbagai daerah di Indonesia. Setiap biji kopi dipilih langsung dari petani lokal terbaik dan diproses dengan standar internasional.</p>
+      <div class="about-stats-mini">
+        <div class="stat-mini">
+          <span class="stat-number">10,000+</span>
+          <span class="stat-label">Pelanggan Puas</span>
+        </div>
+        <div class="stat-mini">
+          <span class="stat-number">15+</span>
+          <span class="stat-label">Varian Kopi</span>
+        </div>
+        <div class="stat-mini">
+          <span class="stat-number">5★</span>
+          <span class="stat-label">Rating Google</span>
+        </div>
+      </div>
+      <a href="kontak.html" class="btn-primary">Kunjungi Kami</a>
+    </div>
+
+    <!-- Bagian gambar -->
+    <div class="about-image">
+      <div class="image-placeholder">
+        <img src="/gambar/susasana.jpg" alt="Suasana Rooftop Cafe">
+        <span class="placeholder-text">Suasana Rooftop Cafe</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- TESTIMONI -->
+  <section id="testimonials" class="section section-dark">
+    <h2>Apa Kata Pelanggan Kami?</h2>
+    <p class="section-subtitle">Ribuan pelanggan puas telah merasakan kopi kami</p>
+    <div class="testimonial-slider">
+      <div class="testimonial-track">
+        <article class="testimonial-item">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar">AP</div>
+            <div class="testimonial-info">
+              <strong>Abdullah Padel</strong>
+              <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <p>"Kopi Arabika Gayo-nya juara! Body tebal, rasa complex, dan harga reasonable. Tempatnya juga cozy banget dengan view kota yang keren."</p>
+        </article>
+
+        <article class="testimonial-item">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar">FK</div>
+            <div class="testimonial-info">
+              <strong>Farrel Keseimbangan</strong>
+              <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <p>"Barista-nya ramah dan knowledgeable. Mereka bisa recommend kopi yang sesuai selera. Delivery juga cepat, packaging rapi!"</p>
+        </article>
+
+        <article class="testimonial-item">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar">SA</div>
+            <div class="testimonial-info">
+              <strong>Saiken Apel</strong>
+              <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <p>"Sudah langganan 2 tahun. Kualitas selalu konsisten, never disappointing. Rooftop-nya perfect buat meeting atau hangout."</p>
+        </article>
+      </div>
+      <button class="slider-btn prev" aria-label="Testimoni sebelumnya">‹</button>
+      <button class="slider-btn next" aria-label="Testimoni selanjutnya">›</button>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section id="newsletter" class="section section-newsletter">
+    <div class="newsletter-content">
+      <h2>Bergabung dengan Komunitas Kami</h2>
+      <p>Dapatkan update promo, tips brewing, dan artikel menarik seputar kopi langsung di inbox Anda.</p>
+      <form id="newsletter-form" class="newsletter-form">
+        <input type="email" id="newsletter-email" placeholder="Masukkan email Anda..." required>
+        <button type="submit" class="btn-primary">Subscribe</button>
+      </form>
+      <p class="newsletter-note">🔒 Kami menghargai privasi Anda. Email tidak akan dibagikan ke pihak ketiga.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer id="site-footer">
+  <div class="footer-inner">
+    <div class="footer-columns">
+      <div class="footer-col">
+        <h4>Tentang Roof Top Cafe</h4>
+        <p>Kopi premium dengan suasana rooftop yang nyaman. Dukung petani lokal dan nikmati cita rasa terbaik Nusantara.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">📷 Instagram</a>
+          <a href="#" aria-label="Facebook">👥 Facebook</a>
+          <a href="#" aria-label="WhatsApp">💬 WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigasi Cepat</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="arabika.html">Produk Kopi</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Kontak Kami</h4>
+        <address>
+          <p>📍 Jl. H. Muzahidin Kiyan<br>Kalinyamatan Jepara</p>
+          <p>📞 <a href="tel:+6282136728458">+6282136728458</a></p>
+          <p>📧 <a href="mailto:info@rooftopcafe.com">info@rooftopcafe.com</a></p>
+          <p>⏰ Senin - Minggu: 08:00 - 22:00 WIB</p>
+        </address>
+      </div>
+
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p>Subscribe untuk promo dan update terbaru</p>
+        <form class="footer-newsletter">
+          <input type="email" placeholder="Email Anda" required>
+          <button type="submit">→</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+  <p>&copy; <span id="year"></span> Roof Top Cafe. Semua hak cipta dilindungi.</p>
+  <p class="footer-credits">
+    Dibuat oleh Muhammad Salman Al Farizi, NIM : A12.2024.07206 – Lokasi di Jepara
+  </p>
+  <p class="footer-clock">
+    <span id="clock"></span>
+  </p>
+</div>
+
+    </div>
+  </div>
+</footer>
+
+<!-- BACK TO TOP BUTTON -->
+<button id="back-to-top" aria-label="Kembali ke atas" style="display:none;">⬆️</button>
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a href="https://wa.me/628123456789" class="whatsapp-float" target="_blank" aria-label="Chat WhatsApp">
+  <span class="wa-icon">💬</span>
+</a>
+
+<!-- CART NOTIFICATION -->
+<div id="cart-notification" class="cart-notification">
+  <div class="cart-notification-content">
+    <span>✅</span>
+    <div>
+      <strong>Berhasil ditambahkan!</strong>
+      <p id="cart-notification-text">Produk telah ditambahkan ke keranjang</p>
+    </div>
+  </div>
+</div>
+<script type="text/JavaScript"src="js/atur1.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

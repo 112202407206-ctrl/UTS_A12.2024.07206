@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak - Roof Top Cafe</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-theme="light">
+
+<aside id="sidebar" class="sidebar" aria-hidden="true">
+  <div class="sidebar-header">
+    <h3>☕ Menu Navigasi</h3>
+    <button id="sidebar-close" aria-label="Tutup sidebar">✕</button>
+  </div>
+  <nav class="sidebar-nav">
+    <ul>
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="arabika.html">☕ Kopi Arabika</a></li>
+      <li><a href="robusta.html">☕ Kopi Robusta</a></li>
+      <li><a href="galeri.html">📸 Galeri</a></li>
+      <li><a href="berita.html">📰 Berita</a></li>
+      <li><a href="faq.html">❓ FAQ</a></li>
+      <li><a href="kontak.html" class="active">📞 Kontak</a></li>
+      <li><a href="promo.html">Promo</a></li>
+    </ul>
+  </nav>
+  <div class="sidebar-footer">
+    <p>📍 Jakarta Pusat</p>
+    <p>📞 +62 21 1234 5678</p>
+    <p>⏰ 08:00 - 22:00 WIB</p>
+  </div>
+</aside>
+
+<div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+<header id="site-header">
+  <nav id="main-nav" aria-label="Primary Navigation">
+    <div class="nav-left">
+      <button id="logo-btn" class="brand" aria-label="Buka menu sidebar">
+        <span class="brand-line1">Roof Top Cafe</span>
+        <span class="brand-line2">Premium Coffee</span>
+      </button>
+    </div>
+
+    <div class="nav-center">
+      <ul class="nav-list" role="menubar">
+        <li role="none"><a role="menuitem" href="index.html">Home</a></li>
+        <li role="none" class="has-dropdown">
+          <button aria-haspopup="true" aria-expanded="false">Produk ▾</button>
+          <ul class="dropdown" role="menu" hidden>
+            <li role="none"><a role="menuitem" href="arabika.html">☕ Kopi Arabika</a></li>
+            <li role="none"><a role="menuitem" href="robusta.html">☕ Kopi Robusta</a></li>
+          </ul>
+        </li>
+        <li role="none"><a role="menuitem" href="galeri.html">Galeri</a></li>
+        <li role="none"><a role="menuitem" href="berita.html">Berita</a></li>
+        <li role="none"><a role="menuitem" href="faq.html">FAQ</a></li>
+        <li role="none"><a role="menuitem" href="kontak.html">Kontak</a></li>
+        <li role="none"><a role="menuitem" href="promo.html">Promo</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-right">
+      <div id="nav-search" role="search">
+        <input id="search-input" type="search" placeholder="Cari..." aria-label="Pencarian"/>
+        <button id="search-btn" aria-label="Tombol cari">🔍</button>
+      </div>
+      <button id="cart-btn" class="cart-button" aria-label="Keranjang belanja">
+        🛒 <span id="cart-count" class="cart-badge">0</span>
+      </button>
+      <button id="theme-toggle" aria-pressed="false" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="page-header">
+    <h1>Hubungi Kami</h1>
+    <p>Ada pertanyaan? Hubungi tim kami melalui formulir atau kontak langsung</p>
+  </section>
+
+  <div class="contact-container">
+    <div class="contact-info">
+      <h3>Informasi Kontak</h3>
+      <address>
+        <p><strong>Alamat:</strong><br>Jl. Sudirman No. 123, Lantai 15<br>Jakarta Pusat 10220<br>Indonesia</p>
+        
+        <p><strong>Telepon:</strong><br><a href="tel:+622112345678">+62 21 1234 5678</a></p>
+        
+        <p><strong>WhatsApp:</strong><br><a href="https://wa.me/628123456789">+62 812 3456 7890</a></p>
+        
+        <p><strong>Email:</strong><br><a href="mailto:info@rooftopcafe.com">info@rooftopcafe.com</a></p>
+        
+        <p><strong>Jam Operasional:</strong><br>Senin - Minggu: 08:00 - 22:00 WIB<br>Last Order: 21:30 WIB</p>
+      </address>
+
+      <div style="margin-top: 2rem;">
+        <h4 style="color: var(--coffee-dark); margin-bottom: 1rem;">Ikuti Kami:</h4>
+        <div class="footer-social">
+          <a href="#" style="padding-left: 0;">📷 Instagram: @rooftopcafe</a><br>
+          <a href="#" style="padding-left: 0;">👥 Facebook: Roof Top Cafe</a><br>
+          <a href="#" style="padding-left: 0;">💬 WhatsApp: Chat langsung</a>
+        </div>
+      </div>
+    </div>
+
+    <form class="contact-form" action="#" method="post">
+      <h3>Kirim Pesan</h3>
+      
+      <label for="contact-name">Nama Lengkap *</label>
+      <input id="contact-name" name="name" required placeholder="Masukkan nama lengkap Anda">
+      
+      <label for="contact-email">Email *</label>
+      <input id="contact-email" type="email" name="email" required placeholder="email@contoh.com">
+      
+      <label for="contact-phone">Nomor Telepon</label>
+      <input id="contact-phone" type="tel" name="phone" placeholder="08xx xxxx xxxx (opsional)">
+      
+      <label for="contact-subject">Subjek *</label>
+      <input id="contact-subject" type="text" name="subject" required placeholder="Subjek pesan Anda">
+      
+      <label for="contact-message">Pesan *</label>
+      <textarea id="contact-message" name="message" rows="6" required placeholder="Tuliskan pesan Anda di sini..."></textarea>
+      
+      <button type="submit" class="btn-primary">Kirim Pesan</button>
+    </form>
+  </div>
+
+  <div class="map-container">
+    <h3>Lokasi Kami</h3>
+    <div class="map-placeholder">
+      <p>[Google Maps Embed]</p>
+      <p style="font-size: 0.9rem; margin-top: 1rem;">Jl. Sudirman No. 123, Lantai 15, Jakarta Pusat</p>
+    </div>
+  </div>
+</main>
+
+<footer id="site-footer">
+  <div class="footer-inner">
+    <div class="footer-columns">
+      <div class="footer-col">
+        <h4>Tentang Roof Top Cafe</h4>
+        <p>Kopi premium dengan suasana rooftop yang nyaman. Dukung petani lokal dan nikmati cita rasa terbaik Nusantara.</p>
+        <div class="footer-social">
+          <a href="#">📷 Instagram</a>
+          <a href="#">👥 Facebook</a>
+          <a href="#">💬 WhatsApp</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigasi Cepat</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="arabika.html">Kopi Arabika</a></li>
+          <li><a href="robusta.html">Kopi Robusta</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+          <li><a href="promo.html">Kontak</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kontak Kami</h4>
+        <address>
+          <p>📍 Jl. H. Muzahidin Kiyan Jepara<br>Kalinyamatan Jepara</p>
+          <p>📞 <a href="tel:+6282136728458">+6282136728458</a></p>
+          <p>📧 <a href="mailto:info@rooftopcafe.com">info@rooftopcafe.com</a></p>
+          <p>⏰ Senin - Minggu: 08:00 - 22:00 WIB</p>
+        </address>
+      </div>
+
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p>Subscribe untuk promo dan update terbaru</p>
+        <form class="footer-newsletter">
+          <input type="email" placeholder="Email Anda" required>
+          <button type="submit">→</button>
+        </form>
+      </div>
+    </div>
+
+        <div class="footer-bottom">
+  <p>&copy; <span id="year"></span> Roof Top Cafe. Semua hak cipta dilindungi.</p>
+  <p class="footer-credits">
+    Dibuat oleh Muhammad Salman Al Farizi, NIM : A12.2024.07206 – Lokasi di Jepara
+  </p>
+  <p class="footer-clock">
+    <span id="clock"></span>
+  </p>
+</div>
+
+<button id="back-to-top" aria-label="Kembali ke atas" style="display:none;">⬆️</button>
+<a href="https://wa.me/628123456789" class="whatsapp-float" target="_blank" aria-label="Chat WhatsApp">
+  <span class="wa-icon">💬</span>
+</a>
+<div id="cart-notification" class="cart-notification">
+  <div class="cart-notification-content">
+    <span>✅</span>
+    <div>
+      <strong>Berhasil ditambahkan!</strong>
+      <p id="cart-notification-text">Produk telah ditambahkan ke keranjang</p>
+    </div>
+  </div>
+</div>
+<script type="text/JavaScript"src="js/atur1.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

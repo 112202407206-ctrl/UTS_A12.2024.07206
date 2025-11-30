@@ -446,7 +446,7 @@ body.loaded {
   text-transform: uppercase;
 }
 
-/* Nav Center - Menu Items - Enhanced */
+/* Nav Center - Menu Items - DIPERBAIKI UNTUK MUDAH DIKLIK */
 .nav-center {
   flex: 1;
   display: flex;
@@ -455,15 +455,15 @@ body.loaded {
 
 .nav-list {
   display: flex;
-  gap: 0.15rem; /* lebih rapat dari 0.3rem */
+  gap: 1rem;
   align-items: center;
   list-style: none;
 }
 
 .nav-list a,
 .nav-list button {
-  padding: 0.6rem 1rem; /* semula 0.8rem 1.3rem → lebih ramping */
-  font-size: 0.9rem;    /* semula 0.95rem */
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
   font-weight: 700;
   color: var(--coffee-dark);
   text-decoration: none;
@@ -474,6 +474,11 @@ body.loaded {
   transition: var(--transition-fast);
   position: relative;
   overflow: hidden;
+  white-space: nowrap;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Garis bawah animasi tetap sama */
